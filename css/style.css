@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    background-color: #3B4664;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+ width: 20%;
+}
+.container .dis{
+    background-color: #181F32;
+    min-height: 55px;
+    border:none;
+    border-radius: 6px;
+    font-size: 25px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: end;
+}
+
+.dis .calculation{
+    border-top: 1px solid #3b4664;
+    font-size: 12px;
+    display: none;
+    margin: 0px;
+    padding: 5px;
+}
+.calculatorButtons{
+    background-color:#252D44 ;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding:15px;
+    padding-left: 7px;
+    padding-right: 7px;
+  
+}
+.calculatorButtons .key{
+    
+    transition: 0.2s all;
+}
+.key:active{
+    transform: scale(0.8);
+}
+.key:hover{
+   background-color:white  ; 
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.calculatorButtons .del{
+    background-color: #647299;
+    color:white;
+    box-shadow:0px 2px #414E6E;
+    transition: 0.2s all;
+    font-size: 15px;
+}
+.del:active{
+    transform: scale(0.8);
+}
+
+.del:hover{
+    background-color: #A2B3E1;
+}
+.row button{
+    width:20%;
+    font-size: 18px;
+    font-weight: bolder;
+    color:#474B57;
+    padding: 10px;
+    background-color: #EAE3DB;
+    border-radius: 7px;
+    border:none;
+    box-shadow:0px 2px #B6A49A;
+}
+.lastRow{
+    display: flex;
+    justify-content: space-around;
+}
+.lastRow .reset{
+    width: 46%;
+    padding:10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #647299;
+    color:white;
+    box-shadow:0px 2px #414E6E;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: 0.2s all;
+}
+.lastRow .equal{
+    width: 46%;
+    padding:10px;
+    border: none;
+    border-radius: 7px;
+    color:white;
+    background-color: #D13F30;
+    box-shadow:0px 2px #8F2316;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: 0.2s all;
+}
+.equal:active{
+    transform: scale(0.8);
+}
+.equal:hover{
+    background-color: #F96C5B;
+}
+.reset:active{
+    transform: scale(0.8);
+}
+.reset:hover{
+    background-color: #A2B3E1;
+}
